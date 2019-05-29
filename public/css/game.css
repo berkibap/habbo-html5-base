@@ -1,0 +1,247 @@
+/*
+ * @author Necmi Hasan (Kylon)
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #73D8ED;
+}
+
+/* INPUTS & BUTTONS */
+.input-illu {
+  background-color: #393939;
+  border: none;
+  border-top: 1px solid #000;
+  -webkit-box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+  -moz-box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+  box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+}
+
+.input-illu:focus {
+  -webkit-box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+  -moz-box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+  box-shadow: inset 0px -1px 0px 1px rgba(69,66,62,1);
+  border-top: 1px solid #000;
+}
+.login-username {
+  width: 43% !important;
+  color:white;
+}
+.login-password {
+  width: 43% !important;
+  margin-left: 70px;
+  color:white;
+}
+.btn-blue {
+  background: #2a6484;
+  background: -moz-linear-gradient(top,  #2a6484 50%, #235a7b 51%);
+  background: -webkit-linear-gradient(top,  #2a6484 50%,#235a7b 51%);
+  background: linear-gradient(to bottom,  #2a6484 50%,#235a7b 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a6484', endColorstr='#235a7b',GradientType=0 );
+  -webkit-box-shadow: inset 0px 0px 0px 1px #3881AA;
+  -moz-box-shadow: inset 0px 0px 0px 1px #3881AA;
+  box-shadow: inset 0px 0px 0px 1px #3881AA;
+  border: 1px solid #21526C;
+  font-weight: bold;
+}
+
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active {
+  color: #fff;
+}
+
+.btn-red {
+  background: #be3a33;
+  background: -moz-linear-gradient(top,  #be3a33 50%, #9d3014 50%);
+  background: -webkit-linear-gradient(top,  #be3a33 50%,#9d3014 50%);
+  background: linear-gradient(to bottom,  #be3a33 50%,#9d3014 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be3a33', endColorstr='#9d3014',GradientType=0 );
+  -webkit-box-shadow: inset 0px 0px 0px 1px #DD5246;
+  -moz-box-shadow: inset 0px 0px 0px 1px #DD5246;
+  box-shadow: inset 0px 0px 0px 1px #DD5246;
+  border: 1px solid #21526C;
+  font-weight: bold;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active {
+  color: #fff;
+}
+/* ALERT */ 
+
+.alert .closebtn {
+  background: url('../img/alert_button.png');
+  height: 22px;
+  width: 50px;
+  border:none;
+  /*margin-top: 20px;*/
+  padding-top: 20px;
+}
+.alert .closebtn:hover {
+  background: url('../img/alert_button_hover.png');
+}
+.alert .closebtn:active {
+  background: url('../img/alert_button_active.png');
+}
+.alert .top {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 276px;
+  height: 29px;
+  padding-top:3px;
+  background: url('../img/alert_top.png') no-repeat;
+}
+.alert .content {
+  background: url('../img/alert_center.png?234234') no-repeat;
+  height: 100px;
+  width: 276px;
+  padding-top: 20px;
+  padding-bottom: -20px;
+  text-align: center;
+  
+}
+.alert .bottom { 
+  background: url('../img/alert_bottom.png') no-repeat;
+  height: 11px;
+  width: 276px;
+}
+/* USER-FOOTER */
+.user-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background-color: #24211C;
+  box-shadow: 0px 0px 4px #33312B;
+  border-top: 3px solid #27251F;
+  padding: 15px 15px;
+  display:flex;
+}
+
+/* USER-DETAILS */
+.panel-user-details {
+  box-shadow: 0in 2px 0pc 0px rgba(0,0,0,.7), 1px 0px 0pc 0pc rgba(0,0,0,.7), -1px 0pt 0pt 0in rgba(0,0,0,.7);
+  border-top-color: rgba(255,255,255,.2);
+  border-right-color: rgba(255,255,255,.2);
+  border-bottom-color: rgba(255,255,255,.2);
+  border-left-color: rgba(255,255,255,.2);
+  border-top-width: 0;
+  border-right-width: .125pc;
+  border-bottom-width: .020833333in;
+  border-left-width: .020833333in;
+  border-radius: 0 0 3.75pt .052083333in;
+  width: 127.5pt;
+  height: 5.3125pc;
+  background-color: rgba(40,40,40,.65);
+  margin-top: -30px;
+}
+
+.panel-user-details #diamonds {
+  color: #37C9EA;
+}
+.panel-user-details #coins {
+  color: #D4AE21;
+}
+.panel-user-details #duckets {
+  color:#BA7CC2;
+}
+.panel-user-details #hcinfo {
+  color: #00C0C3;
+}
+.panel-user-details #hc {
+  background:#3F403C;
+  border-radius: 5px;
+  margin-top:-100px;
+  text-align: center;
+}
+.panel-user-details #hc #hcinfo {
+  margin-left: -10px;
+}
+.panel-user-details #hc img {
+  margin-top: -70px;
+  
+}
+/* NAVIGATION */
+.panel-navigation {
+  height: 57px;
+  width: 472px;
+  border: none;
+}
+
+.panel-navigation > .panel-heading {
+  background-image: url('../img/navigation/header.png');
+  background-repeat: repeat-x;
+  height: 57px;
+  border: 1px solid #1B435B;
+  text-shadow: 0px 1px 1px #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.panel-navigation > .panel-body {
+  background-color: #fff;
+  border: 1px solid #4A85A2;
+  padding: 0px;
+}
+
+.panel-navigation > .panel-body > .user-nav {
+  padding-top: 10px;
+}
+
+.panel-navigation > .panel-body > .user-nav > li:first-child {
+  padding-left: 25px;
+}
+
+.panel-navigation > .panel-body > .user-nav > li {
+  height: 39px;
+}
+
+.panel-navigation > .panel-body > .user-nav > li>a {
+  line-height: 1.2;
+}
+
+.user-nav>li.active>a, .user-nav>li.active>a:focus, .user-nav>li.active>a:hover {
+  background: #E6E7DE;
+  border-bottom-color: transparent;
+}
+
+.user-nav>li>a, .user-navs>li>a:focus, .user-nav>li>a:hover {
+  /*background: #dfded6;
+  background: -moz-linear-gradient(top,  #dfded6 9%, #dfded6 43%, #cccccc 58%, #c7c7c7 68%, #c6c5bd 100%);
+  background: -webkit-linear-gradient(top,  #dfded6 9%,#dfded6 43%,#cccccc 58%,#c7c7c7 68%,#c6c5bd 100%);
+  background: linear-gradient(to bottom,  #dfded6 9%,#dfded6 43%,#cccccc 58%,#c7c7c7 68%,#c6c5bd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfded6', endColorstr='#c6c5bd',GradientType=0 );*/
+  background-color: #d5d6cc;
+  border: 1px solid #999999;
+  border-bottom-color: transparent;
+  color: #000;
+  text-shadow: 0px 1px 1px #f7f7f7;
+}
+
+.panel-navigation > .panel-body > .tab-content {
+  background-color: #E6E7DE;
+  padding: 5px;
+}
+
+/* ROOMS */
+.panel-rooms {
+  background-color: #fff;
+  border-radius: 0px;
+  border: 1px solid #C7C7C7;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.panel-rooms i {
+  color: #7CD3F0;
+}
+
+.panel-rooms > .panel-heading {
+  background-color: #fff;
+  border-bottom: 1px solid #C7C7C7;
+}

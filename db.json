@@ -1,0 +1,32 @@
+{
+  "users" : [
+    {
+      "username" : "Berk",
+      "motto" : "my motto men",
+      "coins" : 1337,
+      "pixels" : 1337
+    }
+  ],
+
+  "rooms" : [
+    {
+      "title" : "Test",
+      "description" : "my room x)",
+      "type" : 0,
+      "maxUsers" : 30,
+      "inRoom" : 2,
+      "owner" : "Berk",
+      "model" : [0,0,0,0]
+    },
+
+    {
+      "title" : "Testx",
+      "description" : "my room x)",
+      "type" : 0,
+      "maxUsers" : 30,
+      "inRoom" : 4,
+      "owner" : "Berk",
+      "model" : [0,0,0,0]
+    }
+  ]
+}

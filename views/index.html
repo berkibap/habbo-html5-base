@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Habbo</title>
+
+    <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/game.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <!-- J S -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/logging.js"></script>
+    <script src="./js/game.js?werwerwerwerw"></script>
+    <script>
+      game.initialize();
+    </script>
+    </head>
+    <!-- <body onselectstart="return false;"> -->
+    <body id="game">
+      <div id="header" style="display:none">
+        <textarea id="logging" disabled="disabled">DEBUGGING: STARTING DEV-CONSOLE..</textarea>
+      </div>
+
+      <!--<div id="game">
+        <div id="loadingContent">
+          <div id="logo"></div>
+          <span>Please wait! Habbo is loading...</span>
+          <div id="bar">
+            <div id="barFrame">
+              <div id="barSprite"></div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="margin-top: 20px;">
+            <div class="panel panel-navigation">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="/img/navigation/header_rooms.png" />
+                    Navigation
+                  </div>
+
+                  <div class="col-md-7">
+                    <div class="pull-right">
+                      <button type="button" class="btn btn-blue"><i class="fa fa-question" aria-hidden="true"></i></button>
+                      <button type="button" class="btn btn-red"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <ul class="nav nav-tabs user-nav">
+                  <li class="active"><a href="#pub">Public</a></li>
+                  <li><a href="#all">All Rooms</a></li>
+                  <li><a href="#ev">Events</a></li>
+                  <li><a href="#my">My Rooms</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="pub" class="tab-pane fade in active">
+                    <div class="panel panel-rooms">
+                      <div class="panel-heading">
+                        Public Rooms
+                        <div class="pull-right">
+                          <i id="pubOff" class="fa fa-minus" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="panel-body" id="officialRooms">
+                        <ul id="roomListing"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="all" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="ev" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                  <div id="my" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" style="margin-top: 20px;">
+            <div class="pull-right">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="panel panel-user-details">
+                        <div class="panel-body">
+                          <span id="diamonds">0</span> <img src="/img/user/dia.png">
+                          <br>
+                          <span id="coins">0</span> <img src="/img/user/coins.png">
+                          <br>
+                          <span id="duckets">0</span> <img src="/img/user/duckets.png">
+                          <span id="hc">
+                            <img src="/img/user/hc.png" alt="">
+                            <span id="hcinfo">0 Days</span>
+                          </span>
+                        </div>
+                      </div>
+                    <div id="motto" class="col-md-4">
+                        <b>Your motto:</b><i class="motto"></i>
+                    </div>
+
+                    <div id="useravatar" class="col-md-4">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-user-details">
+                <div class="panel-body">
+                  VERLIEBT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="room"></canvas>
+
+      <div class="user-footer">
+        <form action="" id="login" style="display:flex;">
+          <input type="text" class="form-control input-illu login-username col-6" placeholder="Username" />
+        <input type="password" class="form-control input-illu login-password col-6" placeholder="Password" />
+        <input type="submit" value="Login" class="btn btn-blue" style="margin-bottom: -8px; margin-left: 20px;">
+        </form>
+      </footer>
+    </body>
+</html>
